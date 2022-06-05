@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +13,13 @@ namespace Activity_5
 {
     public partial class Form1 : Form
     {
-        public Form1()
+        public Form1(System.IO.Stream input)
         {
             InitializeComponent();
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
+            
+            openFileDialog1.ShowDialog();
 
         }
+
     }
 }
